@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+    height: 100%;
+    background-image: url(https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/M53O4N2ZJRF3JAPNIXHHV7CD6Y.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.fa-solid{
+    float: right;
+    line-height: 80px !important;
+    margin-right: 5px;
+    padding: 0px 30px;
+    margin: 0px 5px ;
+  
+}
+.titulo_2 {
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+
+}
+nav {
+    background-color: rgba(60, 249, 233, 0.628);
+    height: 80px;
+    width: 100%;
+    
+}
+nav .menu {
+    flex-direction: column;
+
+}
+h2 {
+    float: right;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.somos {
+   font-size: 10px;
+}
+
+.submenu_1{
+    width: 120px;
+    position: absolute;
+    background: rgba(93, 33, 137, 0.829);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.submenu_1 li {
+    height: 70px;
+}
+.submenu_1 li a {
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    padding: 5px;
+    color: rgba(216, 242, 230, 0.842);
+    height: 60px;  
+}
+.menu li:hover .submenu_1 {
+    visibility: visible;
+    opacity: 1;
+}
+.submenu li {
+    height: 60px;
+}
+.submenu{
+    width: 120px;
+    position: absolute;
+    background: rgba(93, 33, 137, 0.829);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.submenu li a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    padding: 5px;
+    color: rgba(216, 242, 230, 0.842);
+    height: 50px;
+    font-size: 12px;
+   
+}
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+
+}
+.enlace {
+    position: absolute;
+    padding: 20px 50px ;
+}
+.ubicacion {
+    font-size: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+nav ul {
+    float: right;
+    margin-right: 140px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: black;
+    font-size: 12px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+ li a:hover{
+    background-color: rgb(190, 190, 197);
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: brown;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+section {
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px );
+}
+
+/*pie de pagina*/
+footer {
+    text-align: center;
+    
+}
+.parrafo_pie  {
+    font-size: 15px;
+    margin-top: 30px;
+    color: rgba(156, 33, 213, 0.767);
+}
+.a_pie {
+    font-size: 20px;
+    color: rgba(144, 62, 182, 0.6);
+}
+.footer {
+    height: 100px;
+    padding-top: 5px;
+    margin-top: 60px;
+    background-color: #000000
+}
+
+@media  (max-width:1283px){
+    .enlace {
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    .titulo_2 {
+        font-size: 25px;
+    }
+    nav ul {
+        float: right;
+        margin-right: 40px;
+    }
+ 
+    .modal-contenido{
+        background-color:rgba(198, 188, 111, 0.947);
+        width:50%;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 10% auto;
+        margin-bottom: 10% auto;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 0.5s;
+      }
+      #miModal:target{
+        opacity:1;
+        pointer-events:auto;
+        
+      }
+      button {
+        margin-top: 50px;
+        align-items: center;
+        height: 150px;
+        
+      }
+     .equis {
+        text-align: center;
+        float: right;
+        width: 40px;
+        margin-right: 0px 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: red;
+     }
+     .link_modal {
+        text-decoration: none;
+        color: black;
+        
+     }
+}
+@media screen and (max-width:1220px) {
+    .enlace {
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .titulo_2 {
+        font-size: 20px;
+    }
+    nav ul {
+        float: right;
+        margin-right: 20px;
+    }
+    .modal-contenido{
+        background-color:rgba(198, 188, 111, 0.947);
+        width:50%;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 10% auto;
+        margin-bottom: 10% auto;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 0.5s;
+      }
+      #miModal:target{
+        opacity:1;
+        pointer-events:auto;
+        
+      }
+      button {
+        margin-top: 50px;
+        align-items: center;
+        height: 150px;
+        
+      }
+     .equis {
+        text-align: center;
+        float: right;
+        width: 40px;
+        margin-right: 0px 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: red;
+     }
+     .link_modal {
+        text-decoration: none;
+        color: black;
+        
+     }
+}
+@media screen and (max-width:920px) {
+    .enlace {
+        padding-left: 10px;
+    }
+    nav ul li a {
+        font-size: 10px;
+    }
+    .titulo_2 {
+        font-size: 25px;
+    }
+    nav ul {
+        float: right;
+        margin-right: 80px;
+    }
+    .modal-contenido{
+        background-color:rgba(198, 188, 111, 0.947);
+        width:50%;
+        height: 300px;
+        padding: 10px 20px;
+        margin: 10% auto;
+        margin-bottom: 10% auto;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 0.5s;
+      }
+      #miModal:target{
+        opacity:1;
+        pointer-events:auto;
+        
+      }
+      button {
+        margin-top: 50px;
+        align-items: center;
+        height: 150px;
+        
+      }
+     .equis {
+        text-align: center;
+        float: right;
+        width: 40px;
+        margin-right: 0px 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: red;
+     }
+     .link_modal {
+        text-decoration: none;
+        color: black;
+        
+     }
+}
+
+@media screen and (max-width:926px)
+{
+    .checkbtn{
+        display: block;
+        width: 15px;
+        margin-right: 5px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: forestgreen;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover , li a.activo {
+        background: none;
+        color: chartreuse;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .titulo_2 {
+        font-size: 18px; 
+    }
+    .login {
+        font-size: 12px;
+        float: right; 
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:850px)
+{
+    .checkbtn{
+        display: block;
+        width: 15px;
+        margin-right: 5px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: forestgreen;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover , li a.activo {
+        background: none;
+        color: chartreuse;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .titulo_2 {
+        font-size: 18px; 
+    }
+    .login {
+        font-size: 12px;
+        float: right; 
+        margin-right: 40px;
+    }
+    .modal-contenido{
+        background-color:rgba(198, 188, 111, 0.947);
+        width:20%;
+        height:500px;
+        padding: 10px 20px;
+        margin: 10% auto;
+        margin-bottom: 10% auto;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+      }
+      .modal{
+        position:fixed;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity:0;
+        pointer-events:none;
+        transition: all 0.5s;
+      }
+      #miModal:target{
+        opacity:1;
+        pointer-events:auto;
+        
+      }
+      button {
+        margin-top: 50px;
+        align-items: center;
+        width:150px;
+        
+
+        
+      }
+     .equis {
+        text-align: center;
+        float: right;
+        width: 40px;
+        margin-right: 0px 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: red;
+     }
+     .link_modal {
+        text-decoration: none;
+        color: black;
+        
+     }
+}
+
+
+
+
+
+
+
+
+
+
+ /*modal*/
+.modal-contenido{
+    background-color:rgba(198, 188, 111, 0.947);
+    width:50%;
+    height: 300px;
+    padding: 10px 20px;
+    margin: 10% auto;
+    margin-bottom: 10% auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+  }
+  .modal{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 0.5s;
+  }
+  #miModal:target{
+    opacity:1;
+    pointer-events:auto;
+    
+  }
+  button {
+    margin-top: 50px;
+    align-items: center;
+    height: 150px;
+    
+  }
+ .equis {
+    text-align: center;
+    float: right;
+    width: 40px;
+    margin-right: 0px 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: red;
+ }
+ .link_modal {
+    text-decoration: none;
+    color: black;
+    
+ }
+ /*Quienes somos*/
+.container_quienessomos {
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    background-color: rgba(133, 47, 120, 0.817);
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+}
+.parrafo_quienessomos {
+ font-size: 30px;
+ color: rgb(194, 197, 214);
+}
+.titulo_quienessomos {
+    font-size: 40px;
+}
+ /*Ubicanos*/
+ .container_ubicanos {
+    text-align: center;
+    width: 50%;
+    height: 300px;
+    background-color: rgba(133, 47, 120, 0.817);
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+}
+.parrafo_ubicanos {
+ font-size: 15px;
+ color: rgb(194, 197, 214);
+}
+.titulo_ubicanos {
+    font-size: 40px;
+}
+.imagen_ubicanos{
+    width: 30%;
+}
+ /*Vision*/
+ .container_vision {
+    text-align: center;
+    width: 50%;
+    height: 350px;
+    background-color: rgba(133, 47, 120, 0.817);
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+}
+.parrafo_vision {
+ font-size: 25px;
+ color: rgb(194, 197, 214);
+}
+.titulo_vision {
+    font-size: 40px;
+}
+ /*Mision*/
+ .container_mision {
+    text-align: center;
+    width: 50%;
+    height: 250px;
+    background-color: rgba(133, 47, 120, 0.817);
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+}
+.parrafo_mision {
+ font-size: 25px;
+ color: rgb(194, 197, 214);
+}
+.titulo_mision {
+    font-size: 40px;
+}
+ /*Admision*/
+ .container_admision {
+    width: 50%;
+    height: 250px;
+    background-color: rgba(133, 47, 120, 0.817);
+    padding-left: 10px;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+}
+.parrafo_admision {
+ font-size: 25px;
+ color: rgb(194, 197, 214);
+}
+.titulo_admision {
+    font-size: 40px;
+}
+.titulo_admision_1 {
+    font-size: 30px;
+    color: rgb(1, 33, 11);
+}
+ /*Lista de ultiles*/
+ .container_utiles {
+    width: 50%;
+    height: 250px;
+    background-color: rgba(133, 47, 120, 0.817);
+    padding-left: 10px;
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+    
+}
+.titulo_utiles {
+    font-size: 40px;
+}
+ .default {
+    border: 1px solid black;
+    border-spacing: 0;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 30px;
+ }
+.table_list {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+ /*Niveles*/
+ .container_niveles {
+    text-align: center;
+    width: 50%;
+    height: 150px;
+    background-color: rgba(133, 47, 120, 0.817);
+    margin-left: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    border-radius: 15px;
+}
+.titulo_niveles {
+    font-size: 40px;
+}
+.titulo_niveles_1 {
+    font-size: 30px;
+    color: aliceblue;
+}
+ /*Noticias*/
+ .container_noticias{
+
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(133, 47, 120, 0.884);
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    border-radius: 15px;
+}
+.titulo_noticias {
+    font-size: 40px;
+}
+.titulo_noticias_1{
+    float: left;
+    font-size: 26px;
+    color: aliceblue;
+    padding-top: 15px;
+    width: 100%;
+}
+.imagen_noticias {
+    width: 20%;
+}
+.parrafo_noticias {
+    font-size: 20px;
+  font-family: monospace;
+}
+
